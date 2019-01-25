@@ -46,6 +46,8 @@ source ~/.bashrc
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
 conda config --set show_channel_urls yes
+添加Pytorch镜像
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/ 
 
 5.pytorch 安装：
 conda install pytorch=0.4.1 cuda90 -c pytorch
