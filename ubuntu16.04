@@ -57,3 +57,12 @@ pip install http://download.pytorch.org/whl/cu90/torch-0.4.1-cp36-cp36m-linux_x8
 
 tensorflow安装：
 conda install tensorflow-gpu
+
+
+
+
+查询cuda,cudnn
+cat /usr/local/cuda/version.txt
+cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
+
+nvcc -V
