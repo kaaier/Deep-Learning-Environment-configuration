@@ -66,3 +66,7 @@ cat /usr/local/cuda/version.txt
 cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
 
 nvcc -V
+
+
+opencv版本:
+pip install opencv-python==3.4.4.19
