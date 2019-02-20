@@ -59,7 +59,14 @@ tensorflow安装：
 conda install tensorflow-gpu
 
 
-
+python修改pip源：
+可以在使用pip的时候在后面加上-i参数，指定pip源 
+eg: pip install scrapy -i https://pypi.tuna.tsinghua.edu.cn/simple
+永久修改——>
+linux: 
+修改 ~/.pip/pip.conf (没有就创建一个)， 内容如下：
+[global]
+index-url = https://pypi.tuna.tsinghua.edu.cn/simple
 
 查询cuda,cudnn
 cat /usr/local/cuda/version.txt
