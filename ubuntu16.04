@@ -41,6 +41,23 @@ export LD_LIBRARY_PATH=/usr/local/cuda-9.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY
 export CUDA_HOME=/usr/local/cuda
 
 
+卸载cuda:
+以下为ubuntu16.04 server中删除cuda9.1的方法：
+
+# --purge选项会将配置文件、数据库等删除
+$ sudo apt-get autoremove --purge cuda
+# 查看安装了哪些cuda相关的库，可以用以下指令
+$ sudo dpkg -l |grep cuda
+# 删除的包名要根据待删除的版本而定
+$ sudo dpkg -P cuda-repo-ubuntu1604-9-1-local_9.1.85-1_amd64
+
+# 这个key值是官网文档查到的，当然通过apt-key list也能查看
+$ sudo apt-key list
+$ sudo apt-key del 7fa2af80
+--------------------- 
+
+
+
 3.安装miniconda：
 wget -c http://repo.continuum.io/miniconda/Miniconda3-4.3.31-Linux-x86_64.sh
 bash Miniconda3-4.3.31-Linux-x86_64.sh
@@ -83,3 +100,7 @@ nvcc -V
 
 opencv版本:
 pip install opencv-python==3.4.4.19
+
+
+ubuntu下网卡驱动
+https://blog.csdn.net/nnuyi/article/details/77915267
