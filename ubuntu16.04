@@ -15,6 +15,12 @@ sudo apt-get install nvidia-384
 
 
 2.安装CUDA Toolkit 9.0 和cuDNN 7.0 ： 
+
+
+
+添加key
+sudo apt-key add Downloads/7fa2af80.pub
+sudo apt-get update
 wget http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/cuda-repo-ubuntu1604_9.0.176-1_amd64.deb
 wget http://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1604/x86_64/libcudnn7_7.0.5.15-1+cuda9.0_amd64.deb
 wget http://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1604/x86_64/libcudnn7-dev_7.0.5.15-1+cuda9.0_amd64.deb
