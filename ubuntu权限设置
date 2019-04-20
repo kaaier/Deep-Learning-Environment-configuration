@@ -1,0 +1,14 @@
+
+#添加新用户
+sudo useradd mangues
+
+
+#修改SSH配置
+sudo vim /etc/ssh/sshd_config 
+AllowUsers root mangues
+
+#重启SSH
+service sshd restart
+
+
+https://blog.csdn.net/u012915455/article/details/80080005
